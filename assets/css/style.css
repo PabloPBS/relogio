@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-background: #262626;
+    --header-background: #383838;
+    --screen-background: #F2D541;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    overflow-y: hidden;
+    background-color: var(--main-background);
+    font-weight: bold;
+    transition: all 0.3s ease-out;
+}
+
+header {
+    background-color: var(--header-background);
+    color: #4e4e4e;
+}
+
+#themeButton {
+    padding: 15px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-bottom: 1px solid var(--screen-background);
+}
+
+#button {
+    padding: 5px 10px;
+    color: var(--screen-background);
+    font-size: 1.5em;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+#screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--screen-background);
+    border: 2px solid #262626;
+    border-radius: 20px;
+    padding: 20px 60px;
+    color: #262626;
+    transition: all .3s ease-in;
+}
+
+#relogio {
+    width: 100%;
+    font-size: 4em;
+    border-bottom: 3px solid #262626;
+    padding-bottom: 5px;
+    transition: all .3s ease-in;
+}
+
+#data {
+    font-size: 2em;
+    margin-top: 10px;
+    transition: all .3s ease-in;
+}
+
+@media screen and (max-width: 450px) {
+    #screen {
+        padding: 15px 45px;
+    }
+
+    #relogio {
+        font-size: 3em;
+    }
+
+    #data {
+        font-size: 1.5em;
+    }
+}
